@@ -7,7 +7,7 @@ App配置文件
 	<runtimekey license="ArcGIS Runtime许可信息"/>
 
     <!--系统工作空间目录-->
-    <workspace path="/RuntimeViewer"/>
+    <workspace path="/RuntimeViewer3D"/>
 
     <!--widget组件列表-->
     <widgetcontainer>
