@@ -96,7 +96,7 @@ public class BaseWidgetControl {
                 widget.inactive();//widget处于关闭状态
                 baseWigetView.setVisibility(View.GONE);
 
-                animClosed();
+//                animClosed();
             }
         });
 
@@ -107,7 +107,7 @@ public class BaseWidgetControl {
                 wigetView.setVisibility(View.VISIBLE);
                 btnOpenWidget.setVisibility(View.GONE);
 
-                animOpen();
+//                animOpen();
             }
         });
 
@@ -119,7 +119,7 @@ public class BaseWidgetControl {
                 wigetView.setVisibility(View.GONE);
 //                btnOpenWidget.setVisibility(View.VISIBLE);
 
-                animClosed();
+//                animClosed();
             }
         });
     }
