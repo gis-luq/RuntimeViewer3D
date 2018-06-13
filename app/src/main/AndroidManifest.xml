@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gisluq.runtimeviewer">
+    package="com.gisluq.runtimeviewer3d">
 
     <!-- 这个权限用于进行网络定位 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -34,28 +34,28 @@
         android:smallScreens="true" />
 
     <application
-        android:name="com.gisluq.runtimeviewer.GloabApp.MPApplication"
+        android:name="com.gisluq.runtimeviewer3d.GloabApp.MPApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.gisluq.runtimeviewer.BMOD.RootAct.InitActivity">
+        <activity android:name="com.gisluq.runtimeviewer3d.BMOD.RootAct.InitActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.gisluq.runtimeviewer.BMOD.SystemModule.LoginActivity" />
-        <activity android:name="com.gisluq.runtimeviewer.BMOD.SystemModule.LockviewActivity" />
-        <activity android:name="com.gisluq.runtimeviewer.BMOD.ProjectsModule.View.MainActivity" />
+        <activity android:name="com.gisluq.runtimeviewer3d.BMOD.SystemModule.LoginActivity" />
+        <activity android:name="com.gisluq.runtimeviewer3d.BMOD.SystemModule.LockviewActivity" />
+        <activity android:name="com.gisluq.runtimeviewer3d.BMOD.ProjectsModule.View.MainActivity" />
         <activity
-            android:name="com.gisluq.runtimeviewer.BMOD.MapModule.View.MapActivity"
+            android:name="com.gisluq.runtimeviewer3d.BMOD.MapModule.View.MapActivity"
             android:configChanges="orientation|navigation|keyboardHidden|screenSize"/>
-        <activity android:name="com.gisluq.runtimeviewer.BMOD.SystemModule.AboutActivity"/>
+        <activity android:name="com.gisluq.runtimeviewer3d.BMOD.SystemModule.AboutActivity"/>
         <activity
-            android:name="com.gisluq.runtimeviewer.Permission.PermissionsActivity"
+            android:name="com.gisluq.runtimeviewer3d.Permission.PermissionsActivity"
             android:configChanges="orientation|navigation|keyboardHidden|screenSize"/>
     </application>
 

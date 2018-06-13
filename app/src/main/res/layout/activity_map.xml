@@ -13,14 +13,13 @@
         android:layout_alignParentBottom="false"
         android:layout_weight="1">
 
-        <com.esri.arcgisruntime.mapping.view.MapView
-            android:id="@+id/activity_map_mapview"
+        <com.esri.arcgisruntime.mapping.view.SceneView
+            android:id="@+id/activity_map_sceneview"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true">
-
-        </com.esri.arcgisruntime.mapping.view.MapView>
+        </com.esri.arcgisruntime.mapping.view.SceneView>
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -120,21 +119,6 @@
             layout="@layout/base_widget_view_tools"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:visibility="gone">
-
-            <ImageView
-                android:id="@+id/activity_map_imgCenterView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                app:srcCompat="@mipmap/center_pic" />
-        </RelativeLayout>
 
     </LinearLayout>
 

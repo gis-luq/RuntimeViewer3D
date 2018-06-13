@@ -4,7 +4,6 @@
 3、tiff - LocalGeoTIFF
 4、在线切片服务 - OnlineTiledMapServiceLayer
 5、在线动态图层 - OnlineDynamicMapServiceLayer
-6、vtpk-LocalVectorTilePackage
 
 
 示例：

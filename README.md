@@ -4,10 +4,10 @@
 组件式开发框架，兼容手机、平板多种设备。
 
 #### 平板模式
-![ ](./readme/20180328105237.png '平板模式')
+![ ](./readme/pad.png '平板模式')
 
 #### 手机模式
-<div align=center><img width="400" src="./readme/20180330235309.png"/></div>
+<div align=center><img width="400" src="./readme/phone.png"/></div>
 
 如何快速运行应用程序？
 ===========
@@ -172,8 +172,8 @@ widget整体效果
 ### widget操作Mapview对象
 每一个widget扩展了父类BaseWidget。使用以下方法就可以获取并操作mapview对象中的内容。
 ```java
-super.mapView.getMap().getBasemap().getBaseLayers();//获取底图图层
-super.mapView.getMap().getOperationalLayers();//获取业务图层
+ super.sceneView.getScene().getBasemap().getBaseLayers();
+ super.sceneView.getScene().getOperationalLayers();
 
 ```
 
@@ -235,21 +235,12 @@ Widget示例
 * tiff - LocalGeoTIFF
 * 在线切片服务 - OnlineTiledMapServiceLayer
 * 在线动态图层 - OnlineDynamicMapServiceLayer
-* vtpk-LocalVectorTilePackage
 
 ##### 底图数据通过加载basemap.json实现，系统根目录/RuntimeViewer/XXX工程/BaseMap/basemap.json
 文件内容如下，相关底图离线文件放在basemap.json所在文件夹即可。
 ```
 {
     "baselayers": [
-		{
-            "name": "离线vtpk",
-            "type": "LocalVectorTilePackage",
-            "path": "china.vtpk",
-            "layerIndex": 1,
-            "visable": true,
-            "opacity": 1
-        },
 		{
             "name": "彩色中文含兴趣点版中国基础地图",
             "type": "OnlineTiledMapServiceLayer",
@@ -270,19 +261,3 @@ Widget示例
 }
 ```
 
-### 要素查询 QueryWidget
-实现功能包括：图查属性、属性查图
-
-![ ](./readme/widgets/identify.png '图查属性')
-
-![ ](./readme/widgets/query.png '属性查图')
-
-### 要素编辑 FeatureEditWidget
-实现功能包括：基于shapefile实现点、线、面要素添加，属性编辑，多媒体附件挂接（照片、视频、录音）
-
-![ ](./readme/widgets/edit.png '要素编辑')
-
-### 测量量算 CalculateWidget
-实现功能包括：坐标获取、长度计算、面积计算
-
-![ ](./readme/widgets/caculate.png '图查属性')

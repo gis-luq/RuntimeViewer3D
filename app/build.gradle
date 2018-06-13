@@ -5,8 +5,8 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.gisluq.runtimeviewer"
-        minSdkVersion 18
+        applicationId "com.gisluq.runtimeviewer3d"
+        minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
         versionName "v-0.1"

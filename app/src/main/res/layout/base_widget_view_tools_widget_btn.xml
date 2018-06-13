@@ -15,8 +15,8 @@
 
         <ImageView
             android:id="@+id/base_widget_view_tools_widget_btn_imgWidgetToolIcon"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             app:srcCompat="@mipmap/widget_default_tools2" />
 
         <TextView

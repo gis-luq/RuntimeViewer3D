@@ -96,6 +96,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_margin="5dp"
-        android:background="@drawable/ic_widget_open_btn" />
+        android:background="@drawable/ic_widget_open_btn"
+        android:visibility="gone" />
 
 </LinearLayout>
