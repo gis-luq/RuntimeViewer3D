@@ -252,6 +252,7 @@ public class LayerManagerWidget extends BaseWidget {
     private void initGeoPackageLayers(){
         String path = getGeoPackagePath();
         List<FileUtils.FileInfo> fileInfos = FileUtils.getFileListInfo(path,"gpkg");
+        if (fileInfos==null) return;
         for (int i = 0; i < fileInfos.size(); i++) {
             FileUtils.FileInfo fileInfo = fileInfos.get(i);
             final GeoPackage geoPackage = new GeoPackage(fileInfo.FilePath);
