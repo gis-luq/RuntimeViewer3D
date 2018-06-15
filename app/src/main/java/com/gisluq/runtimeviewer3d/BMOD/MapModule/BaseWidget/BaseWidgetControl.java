@@ -146,16 +146,16 @@ public class BaseWidgetControl {
      * 打开动画
      */
     private void animOpen() {
-        Animation animationOpen = AnimationUtils.loadAnimation(context, R.anim.widget_enter_left);
-        baseWigetView.startAnimation(animationOpen);
+//        Animation animationOpen = AnimationUtils.loadAnimation(context, R.anim.widget_enter_left);
+//        baseWigetView.startAnimation(animationOpen);
     }
 
     /**
      * 关闭动画
      */
     private void animClosed() {
-        Animation animationExit = AnimationUtils.loadAnimation(context, R.anim.widget_exit_left);
-        baseWigetView.startAnimation(animationExit);
+//        Animation animationExit = AnimationUtils.loadAnimation(context, R.anim.widget_exit_left);
+//        baseWigetView.startAnimation(animationExit);
     }
 
 
