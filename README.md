@@ -47,7 +47,7 @@ App配置文件
 -->
 <configuration>
     <!--Runtime 许可-->
-	    <runtimekey license="runtimestandard,101,rud406482271,none,KGC63PJS3MLFLMZ59141"/>
+	    <runtimekey license="许可信息"/>
 
     <!--系统工作空间目录-->
     <workspace path="/RuntimeViewer"/>
@@ -61,7 +61,7 @@ App配置文件
 </configuration>
 ```
 说明：
-1. runtimekey的license为ArcGIS Runtime 1000.x许可信息，请获取后替换。
+1. runtimekey的license为ArcGIS Runtime 100.x许可信息，请获取后替换。
 2. workspace的path为系统工作空间目录，设置后app会自动初始化文件夹结构信息
 3. widget模块，label为应用程序名称，classname为对应widget类实体，程序加载过会自动初始化。必须填写。
   
