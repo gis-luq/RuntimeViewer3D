@@ -28,8 +28,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Enumeration;
 
-import static com.esri.arcgisruntime.internal.jni.av.dm;
-import static com.esri.arcgisruntime.internal.jni.av.el;
 
 /**
  * 系统硬件参数获取类

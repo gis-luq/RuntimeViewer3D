@@ -12,6 +12,14 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
 
+        <com.esri.arcgisruntime.mapping.view.SceneView
+            android:id="@+id/activity_map_sceneview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+        </com.esri.arcgisruntime.mapping.view.SceneView>
+
         <RelativeLayout
             android:id="@+id/relativeLayout"
             android:layout_width="wrap_content"
@@ -66,28 +74,35 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:layout_marginBottom="47dp"
-            android:layout_marginRight="5dp"
-            android:alpha="0.9"
-            android:background="@drawable/ic_widget_up_btn"
-            android:padding="5dp">
+            android:layout_marginBottom="55dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
 
-            <ToggleButton
-                android:id="@+id/activity_map_togbtnLocation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:background="@drawable/ic_location_btn_off"
-                android:text="ToggleButton"
-                android:textOff=" "
-                android:textOn=" " />
-        </RelativeLayout>
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_bg_circle"
+                android:padding="12dp">
+
+                <ToggleButton
+                    android:id="@+id/activity_map_togbtnLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_location_btn_off"
+                    android:text="ToggleButton"
+                    android:textOff=" "
+                    android:textOn=" " />
+            </FrameLayout>
+
+        </LinearLayout>
     </RelativeLayout>
 
     <LinearLayout
@@ -110,12 +125,31 @@
             android:layout_alignParentTop="true"
             android:visibility="visible" />
 
-        <com.esri.arcgisruntime.mapping.view.SceneView
-            android:id="@+id/activity_map_sceneview"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"></com.esri.arcgisruntime.mapping.view.SceneView>
+            android:layout_weight="1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/activity_map_faBtnpointCollect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="60dp"
+                android:alpha="0.9"
+                android:clickable="true"
+                app:srcCompat="@mipmap/collect_point" />
+
+            <ImageView
+                android:id="@+id/activity_map_imgCenterView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@mipmap/map_cross_2" />
+        </RelativeLayout>
 
     </LinearLayout>
 

@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.gisluq.runtimeviewer3d"
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 27
         versionCode 1
         versionName "v-0.1"
@@ -28,9 +28,9 @@ android {
 }
 
 dependencies {
-    implementation  fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.0'
-    implementation  'org.greenrobot:eventbus:3.0.0'
-    implementation  project(':lib')
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation project(':lib')
     implementation 'com.android.support:design:27.1.0'
 }

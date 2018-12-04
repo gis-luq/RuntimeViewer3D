@@ -11,7 +11,8 @@ App配置文件
 
     <!--widget组件列表-->
     <widgetcontainer>
-        <widget label="图层管理" classname="com.gisluq.runtimeviewer3d.Widgets.LayerManagerWidget.LayerManagerWidget" icon="widget_ico_layer_manager.png" config=""/>
-        <widget label="Hello World" classname="com.gisluq.runtimeviewer3d.Widgets.HelloWorldWidget" config=""/>
+        <widget label="图层管理" classname="com.gisluq.runtimeviewer3d.Widgets.LayerManagerWidget.LayerManagerWidget" 
+ 		icon="widget_layermanager.png" select_icon="widget_layermanager_select2.png"/>
+        <widget label="Hello World" classname="com.gisluq.runtimeviewer3d.Widgets.HelloWorldWidget" />
     </widgetcontainer>
 </configuration>
