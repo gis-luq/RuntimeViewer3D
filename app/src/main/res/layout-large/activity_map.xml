@@ -14,11 +14,10 @@
 
         <com.esri.arcgisruntime.mapping.view.SceneView
             android:id="@+id/activity_map_sceneview"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true">
-        </com.esri.arcgisruntime.mapping.view.SceneView>
+            android:layout_alignParentRight="true"></com.esri.arcgisruntime.mapping.view.SceneView>
 
         <RelativeLayout
             android:id="@+id/relativeLayout"
