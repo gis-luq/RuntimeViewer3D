@@ -70,6 +70,9 @@ public class MapManager {
         /**显示高程*/
         final DecimalFormat df = new DecimalFormat("###.#");
 
+        /***不显示Esri LOGO*/
+        resourceConfig.sceneView.setAttributionTextVisible(false);
+
         //设置高程
         String elevat = df.format(resourceConfig.sceneView.getElevation());
         resourceConfig.txtMapScale.setText("高程:"+elevat);

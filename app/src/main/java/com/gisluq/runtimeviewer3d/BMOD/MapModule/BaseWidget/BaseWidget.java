@@ -11,6 +11,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.util.Log;
 import android.view.TouchDelegate;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -202,6 +203,7 @@ public abstract class BaseWidget {
                 e.printStackTrace( );
             }
             Log.d("BaseWidget", "inactive, id = " + this.id);
+
         }
     }
 
