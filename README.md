@@ -7,8 +7,8 @@
 ![ ](./readme/pad.png '平板模式')
 
 #### 手机模式
-<div align=center><img width="400" src="./readme/phone1.jpg"/></div>
-<div align=center><img width="400" src="./readme/phone2.jpg"/></div>
+<div align=center><img width="400" src="./readme/phone1.png"/></div>
+<div align=center><img width="400" src="./readme/phone2.png"/></div>
 
 如何快速运行应用程序？
 ===========
